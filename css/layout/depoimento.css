@@ -1,0 +1,60 @@
+
+
+.depoimento { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 120px 0 0 0;
+}
+
+.depoimento__imagem { 
+  max-height: 600px;
+}
+
+.depoimento__imagem img { 
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+
+.depoimento__texto {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+  margin-bottom: 60px;
+  max-width: 65ch;
+
+}
+
+.depoimento__texto span{ 
+
+  margin-top: 40px;
+
+}
+
+@media (max-width: 1000px) {
+
+  .depoimento  { 
+    grid-template-columns: 1fr;
+    text-align: center;
+
+  }
+
+  .depoimento__imagem img {
+    max-height: 350px;
+    justify-self: center;
+
+  }
+
+  .depoimento__texto { 
+    padding: 40px 20px;
+    align-self: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento__texto blockquote{
+
+    font-size: 2.4rem;
+  }
+}

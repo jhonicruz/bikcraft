@@ -1,0 +1,120 @@
+.bike-bg { 
+  padding: 20px 0 60px 0;
+}
+
+.bike-container { 
+
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 0 20px 60px 20px;
+}
+
+.bike-galeria img { 
+  border-radius: 4px;
+}
+
+
+
+.bike-galeria__foto-principal { 
+  grid-column: 1 / -1;
+}
+
+.bike-galeria__fotos-secundarias { 
+  gap: 20px;
+}
+
+.bike-conteudo__descricao { 
+  margin-bottom: 32px;
+}
+
+.bike-conteudo__cta { 
+  margin-bottom: 40px;
+}
+.bike-conteudo__info span { 
+  padding: 4px 8px;
+    border-radius: 4px;
+}
+
+
+.bike-conteudo__title { 
+  margin-bottom: 12px;
+}
+
+.bike-ficha__items { 
+  padding: 32px;
+  gap: 10px;
+  border-radius: 4px;
+
+}
+
+.bike-ficha__items li{ 
+  
+  color: inherit;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--c11);
+}
+
+
+.bike-ficha__items li span { 
+  text-align: right;
+  color: var(--c6);
+}
+
+.bike-conteudo__title { 
+  margin-top: 40px;
+}
+
+
+.bicicletas__individuais__escolha { 
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+
+@media( max-width: 900px) { 
+
+  .bike-galeria { 
+    grid-template-columns: 1fr;
+  }
+  
+  .bike-galeria__fotos-secundarias { 
+    flex-direction: column;
+  }
+
+  .bike-conteudo__cta .botao { 
+    font-size: 1.4rem;
+  }
+  .bike-conteudo__info { 
+    gap: 3px;
+  }
+
+  .bike-conteudo__descricao { 
+    font-size: 1.8rem;
+  }
+
+
+}
+
+@media( max-width: 800px) { 
+
+  .bike-container { 
+    grid-template-columns: 1fr;
+  }
+  .bike-galeria { 
+    order: 1;
+  } 
+}
+
+@media (max-width: 370px) { 
+  .bike-conteudo__descricao--seguros {
+    text-align: center;
+  }
+  .bike-conteudo__cta {
+    flex-direction: column;
+  }
+  .bike-conteudo__info {
+    width: max-content;
+  }
+
+}

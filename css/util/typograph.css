@@ -1,0 +1,129 @@
+
+
+.font-1-xxl { /* titulo principal */
+  font-size: 6.4rem;
+  line-height: 1.125;
+  font-weight: 600;
+  font-family: 'poppins', arial, sans-serif;
+}
+
+.font-1-xl { /* titulos bicicletas */
+  font-size: 3.2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: 'poppins', arial, sans-serif;
+}
+
+.font-1-l { 
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'poppins', arial, sans-serif;
+}
+
+.font-1-m { 
+  font-size: 1.8rem;
+  line-height: 1.33;
+  font-weight: 400;
+  font-family: 'poppins', arial, sans-serif;
+}
+
+.font-1-m-b { /* preços */
+  font-size: 1.8rem;
+  line-height: 1.33;
+  font-weight: 600;
+  font-family: 'poppins', arial, sans-serif;
+}
+
+.font-1-s { 
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'poppins', arial, sans-serif;
+}
+
+
+.font-1-xs { 
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'poppins', arial, sans-serif;
+}
+
+
+/* ROBOTO */
+
+.font-2-l { /* corpo */
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'roboto',sans-serif;
+}
+
+.font-2-l-b { /* ALL CAPS */
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 1.5;
+  font-family: 'roboto',sans-serif;
+  text-transform: uppercase;
+}
+
+.font-2-m { 
+  font-size: 1.8rem;
+  line-height: 1.33;
+  font-weight: 500;
+  font-family: 'roboto',sans-serif;
+}
+
+.font-2-s { 
+
+  font-size: 1.6rem;
+  line-height: 1.45;
+  font-weight: 400;
+  font-family: 'roboto',sans-serif;
+}
+
+.font-2-xs { 
+
+  font-size: 1.4rem;
+  line-height: 1.45;
+  font-weight: 400;
+  font-family: 'roboto',sans-serif;
+}
+
+.font-3-unico { 
+  font-size: 3.2rem;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+/* 
+.fonte-titulo-32 { 
+
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-family: 'poppins', arial, sans-serif;
+}
+
+.fonte-corpo-24 { 
+
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-family: 'roboto',sans-serif;
+}
+
+.fonte-preco-18 { 
+
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: 'roboto',sans-serif;
+  font-weight: 500;
+}
+
+
+
+
+.bold { 
+  font-weight: bold;
+} */

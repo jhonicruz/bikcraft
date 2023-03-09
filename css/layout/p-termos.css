@@ -1,0 +1,21 @@
+
+.termos__conteudo  {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.termos__conteudo__titulos {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.termos__conteudo__textos {
+  max-width: 75ch;
+    margin-bottom: 24px;
+}
+
+.termos__conteudo p + h3 {
+  margin-top: 40px;
+}

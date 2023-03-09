@@ -1,0 +1,33 @@
+/* ____________________________RESET______________________________ */
+
+@import "../css/base/reset.css";
+
+/* ____________________________UTILITÁRIOS______________________________ */
+
+@import "../css/util/colors.css";
+@import "../css/util/typograph.css";
+@import "../css/util/boundaries.css";
+
+/* ____________________________GLOBAL______________________________ */
+
+@import "../css/global/header.css";
+@import "../css/global/footer.css";
+
+/* ____________________________COMPONENTES______________________________ */
+@import "../css/components/botao.css";
+@import "../css/components/titulos.css";
+@import "../css/components/bicicletas-individual.css";
+
+/* ____________________________LAYOUT______________________________ */
+
+@import "../css/layout/intro.css";
+@import "../css/layout/bicicletas.css";
+@import "../css/layout/tecnologia.css";
+@import "../css/layout/parceiros.css";
+@import "../css/layout/depoimento.css";
+@import "../css/layout/seguro.css";
+@import "../css/layout/p-termos.css";
+@import "../css/layout/p-bicicletas.css";
+@import "../css/layout/p-seguro.css";
+@import "../css/layout/p-magic.css";
+@import "../css/layout/seguro-bicicletas.css";

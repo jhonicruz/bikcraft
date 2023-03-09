@@ -1,0 +1,142 @@
+.seguro-page {
+  padding-top: 0;
+}
+
+.vantagens-bg {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.vantagens__titulo h2 {
+  margin-bottom: 60px;
+}
+
+.vantagens__lista {
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+}
+
+.vantagens__lista li img {
+  margin-bottom: 8px;
+}
+
+.vantagens__lista li h3 {
+  margin-bottom: 8px;
+}
+
+.vantagens__lista-bicicletas {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 0;
+}
+
+.vantagens__lista-bicicletas li img {
+  width: 24px;
+}
+
+.vantagens-bg-bicicletas {
+  padding: 32px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+/* -------------PERGUNTAS --------------- */
+
+.perguntas-bg {
+  padding: 120px 20px;
+}
+
+.perguntas {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.perguntas:nth-child(even) {
+  background-color: var(--c1);
+}
+
+.perguntas button {
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  gap: 8px;
+}
+
+.perguntas button::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url("../../img/p-seguros/seta-abrir.svg");
+  transition: 0.3s;
+}
+
+.perguntas button::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+}
+
+.perguntas__respostas {
+  display: none;
+}
+
+.perguntas__respostas--ativo {
+  display: block;
+  padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .vantagens__lista a {
+    gap: 20px;
+  }
+
+  .vantagens__lista li h3 {
+    font-size: 1.8rem;
+  }
+
+  .vantagens__lista li p {
+    font-size: 1.4rem;
+    max-width: 50ch;
+  }
+}
+
+@media (max-width: 600px) {
+  .vantagens-bg {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .vantagens__lista {
+    gap: 15px;
+  }
+
+  .vantagens__lista li p {
+    font-size: 1.2rem;
+    max-width: 70ch;
+  }
+
+  .vantagens__lista-bicicletas li h3 {
+    font-size: 1.6rem;
+  }
+  .vantagens__lista-bicicletas li p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .vantagens__lista {
+    grid-template-columns: 1fr;
+  }
+
+  /*   .vantagens__lista li p {
+    font-size:1.2rem;
+    max-width: 35ch;
+  } */
+}

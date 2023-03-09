@@ -1,0 +1,126 @@
+.bicicletas {
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bicicletas h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas p {
+  margin-bottom: 32px;
+}
+
+.bicicletas__imagem {
+  position: relative;
+}
+
+.bicicletas__imagem img {
+  border-radius: 5px;
+}
+
+.bicicletas__imagem > span {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 8px 16px 8px 8px;
+  background-color: var(--c12);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.bicicletas__vantagens {
+  grid-template-columns: 1fr 1fr;
+}
+
+.bicicletas__vantagens ul {
+  display: grid;
+  gap: 16px;
+}
+
+.bicicletas__vantagens ul li {
+  display: flex;
+  align-items: center;
+}
+
+.bicicletas__vantagens ul li img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.bicicletas__vantagens__cta {
+  align-self: end;
+  justify-self: flex-end;
+}
+
+.bicicletas__vantagens__cta a::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  background-image: url("../../img/p-bicicletas/seta.svg");
+  margin-left: 12px;
+  transition: 200ms;
+}
+
+.bicicletas__vantagens__cta a:hover:after {
+  transform: translateX(4px);
+  transition: 200ms;
+}
+
+.bicicletas__info h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  margin-bottom: 8px;
+}
+.bicicletas-bg-black {
+  background: linear-gradient(to right, var(--c0) 30%, var(--c11) 0);
+}
+
+@media (max-width: 957px) {
+  .bicicletas {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas-bg-black {
+    background: var(--c11);
+  }
+}
+@media (max-width: 465px) {
+  .bicicletas__vantagens {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas__vantagens__cta {
+    grid-column: 1;
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+
+  .bicicletas__imagem > span {
+    padding: 4px 8px;
+    font-size: 1.6rem;
+  }
+}
+
+/* @media (max-width: 465px) {
+  .bicicletas__vantagens {
+    grid-template-columns: 1fr;
+    justify-self: flex-start;
+    align-self: start;
+  }
+
+  .bicicletas__vantagens__cta {
+    grid-column: 1;
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+} */

@@ -1,0 +1,120 @@
+.seguro {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.seguro__titulo {
+  grid-column: 1 / -1;
+}
+
+.seguro__item {
+  grid-template-columns: 1fr 1fr;
+  padding: 32px 32px 32px 60px;
+  border-radius: 5px;
+}
+.seguro__subtitulo {
+  margin-bottom: 40px;
+}
+.seguro__preco {
+  grid-column: 2;
+
+  text-align: right;
+}
+
+.seguro__prazo {
+  grid-row: 2;
+  grid-column: 2;
+  text-align: right;
+}
+
+.seguro__lista {
+  grid-column: 1 / -1;
+  padding-top: 32px;
+}
+
+.seguro__lista li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.seguro__lista li::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 13px;
+  height: 9px;
+  left: -20px;
+  background-image: url("../../img/seguros/lista.svg");
+}
+
+.seguro__lista li + li {
+  margin-top: 20px;
+}
+
+.seguro a {
+  grid-column: 1 / -1;
+  max-width: max-content;
+  margin-top: 32px;
+}
+.botao--seguro {
+  background-color: var(--c11);
+}
+
+.seguro h3 {
+  text-transform: uppercase;
+}
+
+@media (max-width: 922px) {
+  .seguro {
+    grid-template-columns: 1fr;
+  }
+
+  .seguro__titulo {
+    font-size: 4.2rem;
+    line-height: 5.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .seguro__item h3,
+  .seguro__preco {
+    font-size: 2.4rem;
+  }
+
+  .seguro__item li {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .seguro {
+    padding: 40px 20px;
+  }
+  .seguro__titulo {
+    font-size: 3.2rem;
+  }
+  .seguro__item {
+    grid-template-columns: 1fr;
+    padding: 20px 30px 20px 40px;
+  }
+  .seguro__preco {
+    grid-column: 1;
+    text-align: left;
+  }
+
+  .seguro__item h3 {
+    margin-bottom: 20px;
+  }
+
+  .seguro__prazo {
+    grid-column: 1;
+    text-align: left;
+    order: 2;
+    grid-row: 3;
+  }
+}

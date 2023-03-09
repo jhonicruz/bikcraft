@@ -1,0 +1,24 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html { 
+  font-size: 62.5%;
+}
+
+body { 
+  font-size: 1.6rem;
+}
+
+img { 
+  display: block;
+  max-width: 100%;
+}
+
+article { 
+  display: block;
+}
