@@ -7,6 +7,7 @@
 .contato {
   grid-template-columns: 5fr 7fr;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .contato-dados {
@@ -26,6 +27,11 @@
 
 .contato-endereco p {
   margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.contato-endereco p:hover, .contato-email a:hover {
+  color: var(--c0);
 }
 
 .contato-email {
@@ -125,4 +131,33 @@
 }
 .form-button a {
   cursor: pointer;
+}
+
+@media (max-width: 800px) { 
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-form form {
+    grid-template-columns: 1fr;
+
+  }
+
+  .contato-form button {
+    grid-column: 1;
+  }
+
+  .contato-dados, .contato-form {
+    padding: 20px;
+  }
+
+  .contato-dados {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0;
+  }
+  .contato-form {
+    border-bottom-left-radius: 4px;
+  }
+
 }
