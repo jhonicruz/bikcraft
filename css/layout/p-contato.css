@@ -1,0 +1,126 @@
+.contato-bg {
+
+  background-image: linear-gradient(var(--c11) 40%, var(--c1) 0);
+  padding-bottom: 200px;
+}
+
+.contato {
+  grid-template-columns: 5fr 7fr;
+  margin: 0 auto;
+}
+
+.contato-dados {
+  padding: 60px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.contato-dados h2 {
+  margin-bottom: 40px;
+}
+
+.contato-endereco {
+  margin-bottom: 32px;
+}
+
+.contato-endereco p {
+  margin-bottom: 8px;
+}
+
+.contato-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-email a {
+  color: inherit;
+  margin-bottom: 8px;
+  font-style: normal;
+}
+
+.contato-email a:nth-child(2) {
+  margin-bottom: 32px;
+}
+.contato-email a:nth-child(3) {
+  margin-bottom: 60px;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+}
+
+
+/* -------------- FORM -------------- */
+.contato-form {
+  padding: 60px;
+  background-color: var(--c0);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.contato-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+
+.contato-form label {
+  padding-bottom: 8px;
+  display: block;
+  font: 400 1.6rem/1.5 Poppins,sans-serif;
+}
+
+.contato-form input {
+  display: block;
+  padding: 12px;
+  background-color: var(--c1);
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--c2);
+  font: 400 1.6rem/1.5 Roboto,sans-serif;
+
+}
+
+.contato-form input[type="text"]:focus, .form-mensagem textarea:focus {
+    outline: 0;
+    border-color: var(--p1);
+    background: var(--c0);
+    box-shadow: 0 0 0 2px #fea;
+}
+
+.form-email {
+  grid-column: 1/-1;
+
+}
+.form-email input {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--c2);
+
+}
+
+.form-mensagem {
+  grid-column: 1 / -1;
+}
+
+.form-mensagem textarea {
+  width: 100%;
+  margin-bottom: 16px;
+  border: none;
+  font: 400 1.6rem/1.5 Roboto,sans-serif;
+  background-color: var(--c1);
+  border: 1px solid var(--c2);
+}
+
+.form-mensagem textarea::placeholder {
+  color: black;
+}
+.form-button {
+  grid-column: 1 / -1;
+  
+}
+.form-button a {
+  cursor: pointer;
+}
