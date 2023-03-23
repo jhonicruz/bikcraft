@@ -61,12 +61,16 @@
 .bg-c12 {
   background-color: var(--c12);
 }
-.bg-0 {
+.bg-c0 {
   background-color: var(--c0);
 }
 
 .bg-c11{ 
   background-color: var(--c11);
+}
+
+.bg-c1 {
+  background-color: var(--c1);
 }
 
 /* --------------others-------------- */

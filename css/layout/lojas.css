@@ -1,0 +1,116 @@
+.loja-bg {
+  padding-bottom: 120px;
+}
+.loja { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  padding: 0 20px;
+}
+
+.loja h2 { 
+  grid-column: 1 / -1;
+  margin-bottom: 60px;
+}
+
+
+.loja-item img {
+  object-fit: cover;
+}
+
+
+.loja-informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 16px;
+  padding: 32px;
+  
+}
+.loja-informacoes h3 {
+  grid-column: 1 / -1;
+}
+.loja-informacoes__contato a {
+  display: block;
+  color: inherit;
+}
+
+.loja-informacoes__endereco, .loja-informacoes__contato {
+  display: grid;
+  gap: 8px;
+}
+.loja-horario {
+  grid-column: 1 / -1;
+}
+
+.loja-horario__dados {
+
+  display: flex;
+  gap: 8px;
+}
+
+.loja-horario__dados img {
+
+  object-fit: cover;
+
+}
+.loja-informacoes__contato, .loja-informacoes__endereco {
+  border-left: 2px solid var(--c2);
+  padding-left: 12px;
+}
+
+
+@media (max-width: 850px) { 
+  .loja {
+    gap: 0 20px;
+  }
+  .loja-informacoes {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 650px) { 
+
+  .loja {
+    grid-template-columns: 1fr;
+  }
+  .loja-informacoes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 400px) { 
+  .loja-informacoes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 350px) { 
+
+  .loja-informacoes h3 {
+    font-size: 24px;
+  }
+}
+/* 
+@media (max-width: 800px) {
+
+  .loja {
+    gap: 20px 20px;
+  }
+} */
+
+/* 
+@media (max-width: 388px) { 
+
+  .loja {
+    gap: 10px;
+  }
+
+  .loja-item  .loja-map{
+
+    width: 80%;
+    object-fit: cover;
+
+  }
+} */
