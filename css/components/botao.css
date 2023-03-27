@@ -1,19 +1,17 @@
 
 .botao { 
-  display: flex;
-  align-items: center;
+  display: inline-block;
   padding: 16px 32px;
   border-radius: 4px;
-  font-family: 'poppins', arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   color: var(--p5);
   background: linear-gradient(#FFBF00, #F2A50C);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   transition: all 600ms;
   max-width: max-content;
+  font: 600 1.8rem/1.35 "poppins", sans-serif;
+  border: none;
+  cursor: pointer;
 
 }
 
