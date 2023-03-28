@@ -3,6 +3,7 @@
     padding-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
+
     background-color: var(--c11);
 }
 .titulos__primario-interno {
@@ -12,6 +13,8 @@
   font-weight: 600;
   font-family: 'poppins', arial, sans-serif;
   color: var(--c0);
+  background: url('../../img/bicicletas/top-right.svg') no-repeat top right 20px;
+ 
 }
 
 .titulos__primario-interno--black {
@@ -55,9 +58,12 @@
 }
 
 @media (max-width: 600px) { 
+
   .titulos__primario-interno {
     font-size: 3.2rem;
+    background: initial;
   }
+  
 
 }
 

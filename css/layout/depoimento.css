@@ -21,7 +21,8 @@
   padding: 40px 40px 80px 80px;
   align-self: end;
   margin-bottom: 60px;
-  max-width: 65ch;
+  max-width: 80ch;
+  background: url('../../img/depoimento/bottom-right-p.svg') no-repeat bottom 20px right 20px;
 
 }
 
@@ -29,6 +30,13 @@
 
   margin-top: 40px;
 
+}
+
+@media (min-width: 1200px) {
+
+  .depoimento__imagem img { 
+    max-height: 520px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -56,5 +64,9 @@
   .depoimento__texto blockquote{
 
     font-size: 2.4rem;
+  }
+
+  .depoimento__texto { 
+    background: initial;
   }
 }

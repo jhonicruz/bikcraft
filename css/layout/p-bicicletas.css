@@ -4,6 +4,8 @@
   padding-bottom: 60px;
   padding-left: 20px;
   padding-right: 20px;
+
+  background: url('../../img/bicicletas/top-right.svg') no-repeat top 40px right 20px;
 }
 
 .bicicletas h2 {
@@ -88,6 +90,7 @@
 @media (max-width: 957px) {
   .bicicletas {
     grid-template-columns: 1fr;
+    background: initial;
   }
 
   .bicicletas-bg-black {
@@ -124,3 +127,5 @@
     justify-self: flex-start;
   }
 } */
+
+
