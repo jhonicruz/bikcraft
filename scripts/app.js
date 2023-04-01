@@ -1,3 +1,96 @@
+
+/* Manter Menu ativo */
+
+const links = document.querySelectorAll('.header__menu a');
+
+function ativarLinks(link) { 
+
+  const url = window.location.href
+  const href = link.href
+  
+  if(url.includes(href)) { 
+    link.classList.add('header__menu--ativo')
+  }
+}
+
+links.forEach(ativarLinks)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Passar parâmetros */
+
+const parametros = new URLSearchParams(location.search) 
+
+
+function mostrarParametros(parametro) { 
+
+
+  const elemento = document.getElementById(parametro)
+  
+  if (elemento) { 
+    elemento.checked = true
+  }
+
+}
+
+parametros.forEach(mostrarParametros)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Trocar foto galeria */
 
 const imagens = document.querySelectorAll('.bike-galeria__fotos-secundarias li img');
@@ -42,18 +135,5 @@ botao.addEventListener('click', ativarResposta)
 
 botoes.forEach(clickBotoes) */
 
-/* Manter Menu ativo */
 
-const links = document.querySelectorAll('.header__menu a');
 
-function ativarLinks(link) { 
-
-  const url = window.location.href
-  const href = link.href
-  
-  if(url.includes(href)) { 
-    link.classList.add('header__menu--ativo')
-  }
-}
-
-links.forEach(ativarLinks)
