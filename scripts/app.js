@@ -55,12 +55,33 @@ parametros.forEach(mostrarParametros)
 
 
 
+/* Esconder e mostrar respostas  */
+
+const perguntas = document.querySelectorAll('.perguntas button')
+
+
+function ativarPergunta(event) { 
+
+  const pergunta = event.currentTarget
+  const controls = pergunta.getAttribute('aria-controls')
+  const resposta = document.getElementById(controls)
+
+  resposta.classList.toggle("resposta--ativa")
+
+  const ativa = resposta.classList.contains('resposta--ativa')
+  pergunta.setAttribute('aria-expanded', ativa)
+}
+
+function eventosPerguntas(perguntas) { 
+
+  perguntas.addEventListener('click', ativarPergunta)
+
+}
 
 
 
 
-
-
+perguntas.forEach(eventosPerguntas)
 
 
 
