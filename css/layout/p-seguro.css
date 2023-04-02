@@ -89,13 +89,13 @@
   background-color: var(--p1);
 }
 
-.respostas {
+.js .respostas {
   display: none;
   padding-top: 20px;
  
 }
 
-.respostas.resposta--ativa {
+.js .respostas.resposta--ativa {
   display: block;
 }
 
