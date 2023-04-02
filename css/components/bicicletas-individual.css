@@ -102,8 +102,27 @@
     grid-template-columns: 1fr;
   }
   .bike-galeria { 
+    grid-template-columns: 1fr 1fr;
     order: 1;
-  } 
+  }
+  
+  .bike-galeria__fotos-secundarias { 
+    flex-direction: row;
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 500px) { 
+
+  .bike-galeria { 
+    grid-template-columns: 1fr;
+ 
+  }
+  
+  .bike-galeria__fotos-secundarias { 
+    flex-direction: column;
+    grid-column: initial;
+  }
 }
 
 @media (max-width: 370px) { 
