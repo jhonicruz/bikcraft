@@ -19,19 +19,6 @@ links.forEach(ativarLinks)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Passar parâmetros */
 
 const parametros = new URLSearchParams(location.search) 
@@ -79,36 +66,7 @@ function eventosPerguntas(perguntas) {
 }
 
 
-
-
 perguntas.forEach(eventosPerguntas)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -120,8 +78,15 @@ const imagemPrincipal = document.querySelector('.bike-galeria__foto-principal');
 function trocarImagem(event){ 
 
   const imagemClicada = event.currentTarget;
-  imagemPrincipal.src = imagemClicada.src
-  imagemPrincipal.alt = imagemClicada.alt
+
+  const media = matchMedia('(min-width: 900px)').matches
+
+  if(media) { 
+
+    imagemPrincipal.src = imagemClicada.src
+    imagemPrincipal.alt = imagemClicada.alt
+  }
+
 
 }
 
@@ -132,29 +97,6 @@ imagem.addEventListener('click', trocarImagem)
 
 imagens.forEach(galeriaClick); 
 
-
-const botoes = document.querySelectorAll('.perguntas button')
-const respostas = document.querySelector('.perguntas .perguntas__respostas');
-
-
-
-/* 
-
-function ativarResposta() { 
-  
-  respostas.classList.toggle('perguntas__respostas--ativo')
-   
-}
-
-function clickBotoes(botao) { 
- 
-botao.addEventListener('click', ativarResposta)
-}
-
-
-
-
-botoes.forEach(clickBotoes) */
 
 
 
